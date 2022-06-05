@@ -7,6 +7,7 @@ if (!isset($_GET["id"]) || empty($_GET["id"])) {
 }
 
 if (isset($_POST["commentContent"]) && !empty($_POST["commentContent"])) {
+  include "core/isLogged.php";
   $data = [
     "comment_content" => $_POST["commentContent"],
     "id_user" => $user->userInfo->id,
