@@ -44,7 +44,7 @@
 
           <div class="col-3">
             <div class="site-logo">
-              <a href="index.html"><strong>Tutor</strong></a>
+              <a href="index.php"><strong>Tutor</strong></a>
             </div>
           </div>
 
@@ -54,12 +54,13 @@
 
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
-                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.php" class="nav-link">Home</a></li>
+                <li><a href="tutorials.php" class="nav-link">Tutorials</a></li>
+                <li><a href="testimonials.php" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.php" class="nav-link">Blog</a></li>
+                <li><a href="about.php" class="nav-link">About</a></li>
+                <li class="active"><a href="contact.php" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.php" class="nav-link">Dashboard</a></li>
               </ul>
             </nav>
           </div>
@@ -87,9 +88,9 @@
 
     <div class="site-section bg-light" id="contact-section">
       <div class="container">
-        
+
         <div class="row">
-          <div class="col-lg-8 mb-5" >
+          <div class="col-lg-8 mb-5">
             <form action="#" method="post">
               <div class="form-group row">
                 <div class="col-md-6 mb-4 mb-lg-0">
@@ -124,7 +125,8 @@
               <ul class="list-unstyled footer-link">
                 <li class="d-block mb-3">
                   <span class="d-block text-black">Address:</span>
-                  <span>34 Street Name, City Name Here, United States</span></li>
+                  <span>34 Street Name, City Name Here, United States</span>
+                </li>
                 <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
                 <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
               </ul>
@@ -197,7 +199,9 @@
             <div class="border-top pt-5">
               <p>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
@@ -226,4 +230,3 @@
 </body>
 
 </html>
-

@@ -44,7 +44,7 @@
 
           <div class="col-3">
             <div class="site-logo">
-              <a href="index.html"><strong>Tutor</strong></a>
+              <a href="index.php"><strong>Tutor</strong></a>
             </div>
           </div>
 
@@ -54,12 +54,13 @@
 
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
-                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="active"><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.php" class="nav-link">Home</a></li>
+                <li><a href="tutorials.php" class="nav-link">Tutorials</a></li>
+                <li><a href="testimonials.php" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.php" class="nav-link">Blog</a></li>
+                <li class="active"><a href="about.php" class="nav-link">About</a></li>
+                <li><a href="contact.php" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.php" class="nav-link">Dashboard</a></li>
               </ul>
             </nav>
           </div>
@@ -120,8 +121,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="post-entry-1 h-100 person-1">
 
-              <img src="images/person_1.jpg" alt="Image"
-              class="img-fluid">
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
 
               <div class="post-entry-1-contents">
                 <span class="meta">Founder</span>
@@ -133,22 +133,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="post-entry-1 h-100 person-1">
 
-              <img src="images/person_2.jpg" alt="Image"
-              class="img-fluid">
-
-              <div class="post-entry-1-contents">
-                <span class="meta">Founder</span>
-                <h2>James Doe</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="post-entry-1 h-100 person-1">
-
-              <img src="images/person_3.jpg" alt="Image"
-              class="img-fluid">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid">
 
               <div class="post-entry-1-contents">
                 <span class="meta">Founder</span>
@@ -161,8 +146,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="post-entry-1 h-100 person-1">
 
-              <img src="images/person_4.jpg" alt="Image"
-              class="img-fluid">
+              <img src="images/person_3.jpg" alt="Image" class="img-fluid">
 
               <div class="post-entry-1-contents">
                 <span class="meta">Founder</span>
@@ -175,8 +159,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="post-entry-1 h-100 person-1">
 
-              <img src="images/person_5.jpg" alt="Image"
-              class="img-fluid">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid">
 
               <div class="post-entry-1-contents">
                 <span class="meta">Founder</span>
@@ -189,8 +172,20 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="post-entry-1 h-100 person-1">
 
-              <img src="images/person_1.jpg" alt="Image"
-              class="img-fluid">
+              <img src="images/person_5.jpg" alt="Image" class="img-fluid">
+
+              <div class="post-entry-1-contents">
+                <span class="meta">Founder</span>
+                <h2>James Doe</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100 person-1">
+
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
 
               <div class="post-entry-1-contents">
                 <span class="meta">Founder</span>
@@ -301,7 +296,9 @@
             <div class="border-top pt-5">
               <p>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
@@ -330,4 +327,3 @@
 </body>
 
 </html>
-
