@@ -23,15 +23,15 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="table.php">
-                    <i class="fas fa-table"></i>
-                    <span>Table</span>
+                <a class="nav-link" href="testimonial.php">
+                    <i class="fas fa-comment"></i>
+                    <span>Testimonial</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.php">
-                    <i class="far fa-user-circle"></i>
-                    <span>Login</span>
+                <a class="nav-link" href="blog.php">
+                    <i class="fas fa-book"></i>
+                    <span>Blog</span>
                 </a>
             </li>
             <li class="nav-item">
