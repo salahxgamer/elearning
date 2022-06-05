@@ -12,8 +12,8 @@ class Article
     // Get a single article
     public function get_article($id)
     {
-        $query = "SELECT * FROM article";
-        return $this->query($query)->fetch_object();
+        $query = "SELECT * FROM article WHERE article_id=$id;";
+        return $this->query($query)->fetch_array();
     }
 
     // Get all articles
