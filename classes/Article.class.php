@@ -12,7 +12,7 @@ class Article
     // Get a single article
     public function get_article($id)
     {
-        $query = "SELECT * FROM article WHERE article_id=$id;";
+        $query = "SELECT * FROM article INNER JOIN category ON id_categorie=category_id INNER JOIN author ON id_author=author_id AND id_author WHERE article_id=$id;";
         return $this->query($query)->fetch_array();
     }
 
@@ -49,6 +49,21 @@ class Article
     {
         $query = "SELECT * FROM category";
         return $this->query($query)->fetch_all(MYSQLI_ASSOC);
+    }
+
+    // Get all comments of an article
+    public function get_comments($_id)
+    {
+        $query = "SELECT * FROM comment INNER JOIN users ON id_user=id WHERE id_article=$_id;";
+        return $this->query($query)->fetch_all(MYSQLI_ASSOC);
+    }
+
+    // Get all comments of an article
+    public function add_comment($data)
+    {
+        $query = "INSERT INTO `comment` (`comment_content`, `id_user`, `comment_likes`, `id_article`) "
+        . "VALUES ('" . $data['comment_content'] . "', " . $data['id_user'] . ", '0', " . $data['id_article'] . ");";
+        return $this->query($query);
     }
 
     // Intermediate query function to prepare and execute sql query
