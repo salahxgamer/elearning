@@ -1,4 +1,4 @@
-<footer class="footer blog-footer">
+<footer class="footer blog-footer text-center">
         <div class="container">
                 <ul class="list-inline mb-3 h5">
                         <li class="list-inline-item"><a class="text-decoration-none" href="#">Article</a></li>
