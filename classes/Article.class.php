@@ -16,6 +16,13 @@ class Article
         return $this->query($query)->fetch_object();
     }
 
+    // Get all articles
+    public function get_all()
+    {
+        $query = "SELECT * FROM article INNER JOIN category ON id_categorie=category_id ORDER BY `article_created_time`";
+        return $this->query($query)->fetch_all(MYSQLI_ASSOC);
+    }
+
     // Get latest articles
     public function get_latest($count = 1)
     {
@@ -30,10 +37,17 @@ class Article
         return $this->query($query)->fetch_all(MYSQLI_ASSOC);
     }
 
+    // Get latest articles
+    public function get_by_category($_category_id)
+    {
+        $query = "SELECT * FROM article INNER JOIN category ON id_categorie=category_id  WHERE category_id=$_category_id ORDER BY `article_created_time` DESC";
+        return $this->query($query)->fetch_all(MYSQLI_ASSOC);
+    }
+
     // Get all categories
     public function get_categories()
     {
-        $query = "SELECT * FROM article";
+        $query = "SELECT * FROM category";
         return $this->query($query)->fetch_all(MYSQLI_ASSOC);
     }
 
