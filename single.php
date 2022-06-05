@@ -123,7 +123,7 @@ console_log($comments);
         <div class="row">
           <div class="col-md-8 blog-content">
 
-            <div class="content">
+            <div class="content overflow-auto">
 
               <?= $currArticle["article_content"] ?>
 
