@@ -126,8 +126,8 @@ if ($_POST) {
           <?php foreach ($testimonials as $testimon) : ?>
 
             <div class="col-lg-4 mb-4">
-              <div class="testimonial-2">
-                <blockquote class="mb-4">
+              <div class="testimonial-2 h-100 d-flex flex-column justify-content-between">
+                <blockquote class="mb-4 h-100 d-flex">
                   <p><?= $testimon['testimonial_content'] ?></p>
                 </blockquote>
                 <div class="d-flex v-card align-items-center">
