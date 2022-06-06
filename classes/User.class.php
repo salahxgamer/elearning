@@ -184,6 +184,14 @@ class User
 		return ($this->query($query));
 	}
 
+	// Get all the existing courses user enrolled in
+	public function get_enrolled_courses($_username = "")
+	{
+		if (empty($_username))	$_username = $this->username;
+		$_user_id = $this->get_user_info($_username)->id;
+		$query = "SELECT * from user_cours INNER JOIN cours ON cours.NumCou=user_cours.id_cours WHERE user_cours.id_user=$_user_id GROUP BY id_cours;";
+		return $this->query($query)->fetch_all(MYSQLI_ASSOC);
+	}
 	// Print info messages in screen
 	public function display_info()
 	{
