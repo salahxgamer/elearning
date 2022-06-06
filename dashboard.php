@@ -37,8 +37,8 @@
                             <!-- Progress -->
                             <?php include "components/dashboard_progress.php" ?>
 
-                            <!-- Todo list -->
-                            <?php include "components/dashboard_todolist.php" ?>
+                            <!-- Enrolled courses -->
+                            <?php include "components/dashboard_cours.php" ?>
 
                         </div>
                         <div class="col">
