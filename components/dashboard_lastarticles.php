@@ -1,9 +1,7 @@
 <!-- Last read articles by the user -->
 <?php 
     // Get all Articles Data
-    $stmt = $conn->prepare("SELECT * FROM `article` INNER JOIN category ON id_categorie=category_id order by RAND() LIMIT 4");
-    $stmt->execute();
-        $last_read_articles = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    $last_read_articles = $article->get_latest(20);
 ?>
 
 <div class="card shadow mb-4">
